@@ -39,22 +39,48 @@
   ======================================================== -->
   </head>
 
-  <body>
+  <body
+    class="bg-dark text-light"
+    style="font-family: 'Inter', 'Segoe UI', Arial, sans-serif"
+  >
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top bg-dark shadow-sm">
-      <div class="container d-flex align-items-center justify-content-between">
+    <header
+      id="header"
+      class="fixed-top bg-black shadow-sm border-bottom border-secondary"
+    >
+      <div
+        class="container d-flex align-items-center justify-content-between py-2"
+      >
         <h1 class="logo m-0">
-          <a href="index.html" class="text-white">Rahmat Purwanto</a>
+          <a
+            href="#hero"
+            class="text-light fw-bold"
+            style="letter-spacing: 2px; font-size: 2rem; text-decoration: none"
+            >Rahmat Purwanto</a
+          >
         </h1>
         <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#skill">Skill</a></li>
-            <li><a class="nav-link scrollto" href="#work">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <ul
+            class="d-flex gap-3 m-0 align-items-center"
+            style="list-style: none"
+          >
+            <li>
+              <a class="nav-link scrollto text-light" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto text-light" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto text-light" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto text-light" href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
     </header>
@@ -65,244 +91,293 @@
       class="d-flex align-items-center justify-content-center text-center position-relative"
       style="
         min-height: 100vh;
-        background: linear-gradient(
-            rgba(30, 30, 30, 0.7),
-            rgba(30, 30, 30, 0.7)
-          ),
-          url('assets/img/IMG-20230105-WA0006.jpg') center/cover no-repeat;
+        background: linear-gradient(120deg, #181c24 60%, #23272f 100%);
+        background-image: url('assets/img/jj-ying-8bghKxNU1j0-unsplash.jpg');
+        background-size: cover;
       "
     >
-      <div class="container position-relative z-2">
-        <h1 class="display-3 fw-bold text-white mb-3">Rahmat Purwanto</h1>
-        <h2 class="text-light mb-4">Backend Developer & Laravel Enthusiast</h2>
-        <a href="#about" class="btn btn-primary btn-lg rounded-pill px-5 shadow"
-          >Learn More</a
+      <div class="container position-relative z-2 py-5">
+        <img
+          src="assets/img/rahmat purwanto.jpg"
+          class="rounded-circle shadow mb-4"
+          style="
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid #222;
+          "
+          alt="Rahmat Purwanto"
+        />
+        <h1 class="display-4 fw-bold text-light mb-2">Rahmat Purwanto</h1>
+        <h2 class="mb-3 text-light">Web Developer & Backend Specialist</h2>
+        <p class="lead mb-4 text-secondary text-light">
+          Crafting modern, scalable, and maintainable web applications with
+          Laravel, Vue.js, and the latest web technologies.
+        </p>
+        <a href="#projects" class="btn btn-info btn-lg rounded-pill px-5 shadow"
+          >View Projects</a
         >
       </div>
     </section>
 
     <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="about" class="about-mf sect-pt4 route py-5 bg-light">
+      <section id="about" class="py-5 bg-dark border-bottom border-secondary">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-4 text-center mb-4 mb-lg-0">
-              <img
-                src="assets/img/rahmat purwanto.jpg"
-                class="img-fluid rounded-circle shadow"
-                style="
-                  width: 220px;
-                  height: 220px;
-                  object-fit: cover;
-                  border: 6px solid #fff;
-                "
-                alt="Rahmat Purwanto"
-              />
-            </div>
-            <div class="col-lg-8">
-              <h2 class="fw-bold mb-2">About Me</h2>
-              <p class="lead mb-3">
-                An informatics engineering graduate with a GPA of 3.10, more
-                than five years of experience in cocoa production, and a passion
-                for Backend Development. Participated in Laravel Vue.JS
-                Bootcamp. Open to Backend Development and Laravel Developer
-                positions.
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <h2 class="fw-bold text-info mb-3">About Me</h2>
+              <p class="mb-3">
+                I am a passionate web developer with a strong background in
+                backend development, especially with Laravel and modern
+                JavaScript frameworks. I love building robust, user-friendly,
+                and visually appealing web applications. With over 5 years of
+                experience in the tech industry, I have delivered various
+                projects for businesses and startups.
               </p>
-              <ul class="list-unstyled mb-3">
+              <ul class="list-unstyled text-secondary mb-3">
                 <li>
-                  <i class="bi bi-envelope me-2"></i> rahmatp.jobs@gmail.com
-                </li>
-                <li><i class="bi bi-phone me-2"></i> +62813 2438 8301</li>
-                <li>
-                  <i class="bi bi-geo-alt me-2"></i> Kab. Bandung, West Java,
-                  Indonesia
+                  <i class="bi bi-envelope me-2 text-info"></i>
+                  rahmatp.jobs@gmail.com
                 </li>
                 <li>
-                  <i class="bi bi-linkedin me-2"></i>
+                  <i class="bi bi-phone me-2 text-info"></i> +62813 2438 8301
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt me-2 text-info"></i> Kab. Bandung,
+                  West Java, Indonesia
+                </li>
+                <li>
+                  <i class="bi bi-linkedin me-2 text-info"></i>
                   <a
                     href="https://www.linkedin.com/in/rahmat-purwanto-157ba2134/"
+                    class="text-info"
                     target="_blank"
                     >LinkedIn</a
                   >
                 </li>
               </ul>
             </div>
+            <div class="col-lg-6 text-center">
+              <div class="bg-white rounded-4 shadow p-4">
+                <h5 class="text-info mb-3">Tech Stack</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                  <img
+                    src="assets/img/html-removebg-preview.png"
+                    alt="HTML"
+                    title="HTML"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/css-removebg-preview.png"
+                    alt="CSS"
+                    title="CSS"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/js.png"
+                    alt="JavaScript"
+                    title="JavaScript"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/php-removebg-preview.png"
+                    alt="PHP"
+                    title="PHP"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/laravel-removebg-preview.png"
+                    alt="Laravel"
+                    title="Laravel"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/vuejs-removebg-preview.png"
+                    alt="Vue.js"
+                    title="Vue.js"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/mysql.png"
+                    alt="MySQL"
+                    title="MySQL"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/git-removebg-preview.png"
+                    alt="Git"
+                    title="Git"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/github-removebg-preview.png"
+                    alt="GitHub"
+                    title="GitHub"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/bootstrap-removebg-preview.png"
+                    alt="Bootstrap"
+                    title="Bootstrap"
+                    style="height: 48px"
+                  />
+                  <img
+                    src="assets/img/rest_api-removebg-preview.png"
+                    alt="REST API"
+                    title="REST API"
+                    style="height: 48px"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- ======= Skills Section ======= -->
-      <section id="skill" class="py-5">
+      <section id="skills" class="py-5 bg-black border-bottom border-secondary">
         <div class="container">
-          <h2 class="text-center fw-bold mb-5">Skills</h2>
+          <h2 class="text-center text-info fw-bold mb-5">Skills</h2>
           <div class="row g-4 justify-content-center">
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/html-removebg-preview.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="HTML"
-                />
-                <h5 class="fw-bold">HTML</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/css-removebg-preview.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="CSS"
-                />
-                <h5 class="fw-bold">CSS</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/js.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Javascript"
-                />
-                <h5 class="fw-bold">Javascript</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/sql2-removebg-preview.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="MySQL"
-                />
-                <h5 class="fw-bold">MySQL</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/php-removebg-preview.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="PHP"
-                />
-                <h5 class="fw-bold">PHP</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
                   src="assets/img/laravel-removebg-preview.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
+                  style="height: 100px"
                   alt="Laravel"
                 />
-                <h5 class="fw-bold">Laravel</h5>
+                <h6 class="fw-bold text-light">Laravel</h6>
+                <p class="small text-secondary">
+                  RESTful API, Eloquent ORM, Authentication, Testing
+                </p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
                   src="assets/img/vuejs-removebg-preview.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Vue.JS"
+                  style="height: 80px"
+                  alt="Vue.js"
                 />
-                <h5 class="fw-bold">Vue.JS</h5>
+                <h6 class="fw-bold text-light">Vue.js</h6>
+                <p class="small text-secondary">
+                  SPA, Vuex, Vue Router, Composition API
+                </p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
-                  src="assets/img/ajax-removebg-preview.png"
+                  src="assets/img/js.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Ajax"
+                  style="height: 80px"
+                  alt="JavaScript"
                 />
-                <h5 class="fw-bold">Ajax</h5>
+                <h6 class="fw-bold text-light">JavaScript</h6>
+                <p class="small text-secondary">ES6+, DOM, AJAX, Fetch API</p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
-                  src="assets/img/codeigniter-removebg-preview.png"
+                  src="assets/img/php-removebg-preview.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Codeigniter"
+                  style="height: 80px"
+                  alt="PHP"
                 />
-                <h5 class="fw-bold">Codeigniter</h5>
+                <h6 class="fw-bold text-light">PHP</h6>
+                <p class="small text-secondary">OOP, MVC, Composer, PHPUnit</p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+              >
+                <img
+                  src="assets/img/mysql.png"
+                  class="mx-auto mb-2"
+                  style="height: 70px"
+                  alt="MySQL"
+                />
+                <h6 class="fw-bold text-light">MySQL</h6>
+                <p class="small text-secondary">
+                  Database Design, Query Optimization
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+              >
+                <img
+                  src="assets/img/git-removebg-preview.png"
+                  class="mx-auto mb-2"
+                  style="height: 70px"
+                  alt="Git"
+                />
+                <h6 class="fw-bold text-light">Git</h6>
+                <p class="small text-secondary">
+                  Branching, Collaboration, CI/CD
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
                   src="assets/img/bootstrap-removebg-preview.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
+                  style="height: 70px"
                   alt="Bootstrap"
                 />
-                <h5 class="fw-bold">Bootstrap</h5>
+                <h6 class="fw-bold text-light">Bootstrap</h6>
+                <p class="small text-secondary">
+                  Responsive Design, Utility Classes
+                </p>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
               >
                 <img
                   src="assets/img/rest_api-removebg-preview.png"
                   class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Rest API"
+                  style="height: 70px"
+                  alt="REST API"
                 />
-                <h5 class="fw-bold">Rest API</h5>
-              </div>
-            </div>
-            <div class="col-6 col-md-3">
-              <div
-                class="card border-0 shadow-sm text-center h-100 p-3 skill-card"
-              >
-                <img
-                  src="assets/img/github-removebg-preview.png"
-                  class="mx-auto mb-2"
-                  style="height: 60px"
-                  alt="Github"
-                />
-                <h5 class="fw-bold">Github</h5>
+                <h6 class="fw-bold text-light">REST API</h6>
+                <p class="small text-secondary">
+                  API Design, Postman, JWT Auth
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ======= Portfolio Section ======= -->
-      <section id="work" class="portfolio-mf sect-pt4 route py-5 bg-light">
+      <!-- ======= Projects Section ======= -->
+      <section
+        id="projects"
+        class="py-5 bg-dark border-bottom border-secondary"
+      >
         <div class="container">
-          <h2 class="text-center fw-bold mb-5">Portfolio</h2>
+          <h2 class="text-center text-info fw-bold mb-5">Featured Projects</h2>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="card border-0 shadow portfolio-card h-100">
+              <div class="card bg-black border-secondary shadow h-100">
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/superadmin.png"
@@ -312,44 +387,29 @@
                     <img
                       src="assets/img/superadmin.png"
                       alt="Sistem Informasi Peminajaman Ruangan"
-                      class="img-fluid portfolio-img"
+                      class="img-fluid portfolio-img rounded-top"
                     />
                   </a>
-                  <div
-                    class="portfolio-hover position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    style="
-                      background: rgba(0, 0, 0, 0.5);
-                      opacity: 0;
-                      transition: opacity 0.3s;
-                    "
-                  >
-                    <a
-                      href="https://github.com/rahmatpurwanto6/skripsi"
-                      class="btn btn-outline-light"
-                      >View Project</a
-                    >
-                  </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">
-                    Sistem Informasi Peminajaman Ruangan Sekolah Tinggi
-                    Teknologi Bandung
+                  <h5 class="card-title text-info">
+                    Sistem Informasi Peminajaman Ruangan
                   </h5>
-                  <p class="card-text">
+                  <p class="card-text text-secondary small">
                     Bachelor thesis project using Codeigniter 3, Ajax,
                     Bootstrap, and Pusher.JS
                   </p>
                   <a
                     href="https://github.com/rahmatpurwanto6/skripsi"
-                    class="fw-bold"
+                    class="btn btn-outline-info btn-sm"
                     target="_blank"
-                    >Link Portofolio</a
+                    >View on GitHub</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card border-0 shadow portfolio-card h-100">
+              <div class="card bg-black border-secondary shadow h-100">
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/dashboard-admin.png"
@@ -359,40 +419,26 @@
                     <img
                       src="assets/img/dashboard-admin.png"
                       alt="Aplikasi Perpustakaan"
-                      class="img-fluid portfolio-img"
+                      class="img-fluid portfolio-img rounded-top"
                     />
                   </a>
-                  <div
-                    class="portfolio-hover position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    style="
-                      background: rgba(0, 0, 0, 0.5);
-                      opacity: 0;
-                      transition: opacity 0.3s;
-                    "
-                  >
-                    <a
-                      href="https://github.com/rahmatpurwanto6/portofolio_perpustakaan"
-                      class="btn btn-outline-light"
-                      >View Project</a
-                    >
-                  </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Aplikasi Perpustakaan</h5>
-                  <p class="card-text">
+                  <h5 class="card-title text-info">Aplikasi Perpustakaan</h5>
+                  <p class="card-text text-secondary small">
                     Portfolio project using Laravel, Vue.JS, and Bootstrap 5
                   </p>
                   <a
                     href="https://github.com/rahmatpurwanto6/portofolio_perpustakaan"
-                    class="fw-bold"
+                    class="btn btn-outline-info btn-sm"
                     target="_blank"
-                    >Link Portofolio</a
+                    >View on GitHub</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card border-0 shadow portfolio-card h-100">
+              <div class="card bg-black border-secondary shadow h-100">
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/penjualan.png"
@@ -402,35 +448,21 @@
                     <img
                       src="assets/img/penjualan.png"
                       alt="Aplikasi Point of Sales"
-                      class="img-fluid portfolio-img"
+                      class="img-fluid portfolio-img rounded-top"
                     />
                   </a>
-                  <div
-                    class="portfolio-hover position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
-                    style="
-                      background: rgba(0, 0, 0, 0.5);
-                      opacity: 0;
-                      transition: opacity 0.3s;
-                    "
-                  >
-                    <a
-                      href="https://github.com/rahmatpurwanto6/portofolio_pos"
-                      class="btn btn-outline-light"
-                      >View Project</a
-                    >
-                  </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Aplikasi Point of Sales</h5>
-                  <p class="card-text">
+                  <h5 class="card-title text-info">Aplikasi Point of Sales</h5>
+                  <p class="card-text text-secondary small">
                     Portfolio project using Laravel, Vue.JS, Bootstrap 5, and
                     Ajax
                   </p>
                   <a
                     href="https://github.com/rahmatpurwanto6/portofolio_pos"
-                    class="fw-bold"
+                    class="btn btn-outline-info btn-sm"
                     target="_blank"
-                    >Link Portofolio</a
+                    >View on GitHub</a
                   >
                 </div>
               </div>
@@ -440,133 +472,65 @@
       </section>
 
       <!-- ======= Contact Section ======= -->
-      <section
-        id="contact"
-        class="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style="background-image: url(assets/img/overlay-bg.jpg)"
-      >
-        <div class="overlay-mf"></div>
+      <section id="contact" class="py-5 bg-black">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="contact-mf">
-                <div id="contact" class="box-shadow-full">
-                  <div class="row">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="bg-dark rounded-4 shadow p-4">
+                <h2 class="fw-bold text-info mb-4 text-center">Contact Me</h2>
+                <form
+                  action="#"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="row g-3">
                     <div class="col-md-6">
-                      <div class="title-box-2">
-                        <h5 class="title-left">Send Message Us</h5>
-                      </div>
-                      <div>
-                        <form
-                          action="#"
-                          method="post"
-                          role="form"
-                          class="php-email-form"
-                        >
-                          <div class="row">
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input
-                                  type="text"
-                                  name="name"
-                                  class="form-control"
-                                  id="name"
-                                  placeholder="Your Name"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input
-                                  type="email"
-                                  class="form-control"
-                                  name="email"
-                                  id="email"
-                                  placeholder="Your Email"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                              <div class="form-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  name="subject"
-                                  id="subject"
-                                  placeholder="Subject"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <textarea
-                                  class="form-control"
-                                  name="message"
-                                  rows="5"
-                                  placeholder="Message"
-                                  required
-                                ></textarea>
-                              </div>
-                            </div>
-                            <div class="col-md-12 text-center my-3">
-                              <div class="loading">Loading</div>
-                              <div class="error-message"></div>
-                              <div class="sent-message">
-                                Your message has been sent. Thank you!
-                              </div>
-                            </div>
-                            <div class="col-md-12 text-center">
-                              <button
-                                type="submit"
-                                class="button button-a button-big button-rouded"
-                              >
-                                Send Message
-                              </button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control bg-black text-light border-secondary"
+                        placeholder="Your Name"
+                        required
+                      />
                     </div>
                     <div class="col-md-6">
-                      <div class="title-box-2 pt-4 pt-md-0">
-                        <h5 class="title-left">Get in Touch</h5>
-                      </div>
-                      <div class="more-info">
-                        <p class="lead">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Facilis dolorum dolorem soluta quidem expedita
-                          aperiam aliquid at. Totam magni ipsum suscipit amet?
-                          Autem nemo esse laboriosam ratione nobis mollitia
-                          inventore?
-                        </p>
-                        <ul class="list-ico">
-                          <li>
-                            <span class="bi bi-geo-alt"></span> Kab. Bandung,
-                            West Java, Indonesia
-                          </li>
-                          <li>
-                            <span class="bi bi-phone"></span> (+62)
-                            813-2438-8301
-                          </li>
-                          <li>
-                            <span class="bi bi-envelope"></span>
-                            rahmatp.jobs@gmail.com
-                          </li>
-                          <li>
-                            <span class="bi bi-linkedin"></span>
-                            <a
-                              href="https://www.linkedin.com/in/rahmat-purwanto-157ba2134/"
-                              >linkedin rahmat purwanto</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control bg-black text-light border-secondary"
+                        placeholder="Your Email"
+                        required
+                      />
                     </div>
                   </div>
-                </div>
+                  <div class="my-3">
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control bg-black text-light border-secondary"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div class="my-3">
+                    <textarea
+                      class="form-control bg-black text-light border-secondary"
+                      name="message"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-info px-5 py-2 rounded-pill"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -575,17 +539,26 @@
     </main>
 
     <!-- ======= Footer ======= -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer
+      class="bg-black text-secondary py-4 mt-5 border-top border-secondary"
+    >
       <div class="container text-center">
-        <!-- <p class="mb-1">&copy; 2025 Rahmat Purwanto. All rights reserved.</p> -->
+        <p class="mb-1">&copy; 2025 Rahmat Purwanto. All rights reserved.</p>
+        <small
+          >Built with <i class="bi bi-bootstrap-fill text-info"></i> Bootstrap |
+          <i class="bi bi-github"></i>
+          <a href="https://github.com/rahmatpurwanto6" class="text-info"
+            >GitHub</a
+          ></small
+        >
       </div>
     </footer>
 
     <div id="preloader"></div>
     <a
       href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
+      class="back-to-top d-flex align-items-center justify-content-center bg-info"
+      ><i class="bi bi-arrow-up-short text-dark"></i
     ></a>
 
     <!-- Vendor JS Files -->
@@ -597,16 +570,5 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      // Portfolio hover effect
-      document.querySelectorAll(".portfolio-card").forEach(function (card) {
-        card.addEventListener("mouseenter", function () {
-          this.querySelector(".portfolio-hover").style.opacity = 1;
-        });
-        card.addEventListener("mouseleave", function () {
-          this.querySelector(".portfolio-hover").style.opacity = 0;
-        });
-      });
-    </script>
   </body>
 </html>
