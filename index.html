@@ -8,6 +8,12 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
+    <!-- Google Fonts: Inter & Poppins for modern look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Favicons -->
     <!-- <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
@@ -29,7 +35,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <!-- =======================================================
   * Template Name: DevFolio
   * Updated: May 30 2023 with Bootstrap v5.3.0
@@ -41,7 +48,7 @@
 
   <body
     class="bg-dark text-light"
-    style="font-family: 'Inter', 'Segoe UI', Arial, sans-serif"
+    style="font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif"
   >
     <!-- ======= Header ======= -->
     <header
@@ -54,7 +61,7 @@
         <h1 class="logo m-0">
           <a
             href="#hero"
-            class="text-light fw-bold"
+            class="text-info fw-bold"
             style="letter-spacing: 2px; font-size: 2rem; text-decoration: none"
             >Rahmat Purwanto</a
           >
@@ -65,20 +72,35 @@
             style="list-style: none"
           >
             <li>
-              <a class="nav-link scrollto text-light" href="#about">About</a>
+              <a class="nav-link scrollto nav-link-custom" href="#about"
+                >About</a
+              >
             </li>
             <li>
-              <a class="nav-link scrollto text-light" href="#skills">Skills</a>
+              <a class="nav-link scrollto nav-link-custom" href="#skills"
+                >Skills</a
+              >
             </li>
             <li>
-              <a class="nav-link scrollto text-light" href="#projects"
+              <a class="nav-link scrollto nav-link-custom" href="#projects"
                 >Projects</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto text-light" href="#contact"
+              <a class="nav-link scrollto nav-link-custom" href="#contact"
                 >Contact</a
               >
+            </li>
+            <!-- Dark/Light Mode Toggle Switch -->
+            <li>
+              <button
+                id="theme-toggle"
+                class="btn btn-outline-info btn-sm rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Toggle dark/light mode"
+                style="width: 38px; height: 38px"
+              >
+                <i id="theme-icon" class="bi bi-moon-stars-fill"></i>
+              </button>
             </li>
           </ul>
         </nav>
@@ -91,10 +113,14 @@
       class="d-flex align-items-center justify-content-center text-center position-relative"
       style="
         min-height: 100vh;
-        background: linear-gradient(120deg, #181c24 60%, #23272f 100%);
-        background-image: url('assets/img/jj-ying-8bghKxNU1j0-unsplash.jpg');
-        background-size: cover;
+        background: linear-gradient(
+          120deg,
+          var(--color-bg-hero1, #eaf1fb) 60%,
+          var(--color-bg-hero2, #f5f7fa) 100%
+        );
       "
+      data-aos="fade-in"
+      data-aos-duration="1200"
     >
       <div class="container position-relative z-2 py-5">
         <img
@@ -108,7 +134,7 @@
           "
           alt="Rahmat Purwanto"
         />
-        <h1 class="display-4 fw-bold text-light mb-2">Rahmat Purwanto</h1>
+        <h1 class="display-4 fw-bold text-info mb-2">Rahmat Purwanto</h1>
         <h2 class="mb-3 text-light">Web Developer & Backend Specialist</h2>
         <p class="lead mb-4 text-secondary text-light">
           Crafting modern, scalable, and maintainable web applications with
@@ -122,18 +148,21 @@
 
     <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="about" class="py-5 bg-dark border-bottom border-secondary">
+      <section
+        id="about"
+        class="py-5 bg-dark border-bottom border-secondary section-divider"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
               <h2 class="fw-bold text-info mb-3">About Me</h2>
               <p class="mb-3">
-                I am a passionate web developer with a strong background in
-                backend development, especially with Laravel and modern
-                JavaScript frameworks. I love building robust, user-friendly,
-                and visually appealing web applications. With over 5 years of
-                experience in the tech industry, I have delivered various
-                projects for businesses and startups.
+                I am a passionate web developer with a background in backend
+                development, specifically with Laravel and JavaScript
+                frameworks. I love building robust, user-friendly, and visually
+                appealing web applications.
               </p>
               <ul class="list-unstyled text-secondary mb-3">
                 <li>
@@ -236,13 +265,20 @@
       </section>
 
       <!-- ======= Skills Section ======= -->
-      <section id="skills" class="py-5 bg-black border-bottom border-secondary">
+      <section
+        id="skills"
+        class="py-5 bg-black border-bottom border-secondary section-divider"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="container">
           <h2 class="text-center text-info fw-bold mb-5">Skills</h2>
           <div class="row g-4 justify-content-center">
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="Laravel Skill"
               >
                 <img
                   src="assets/img/laravel-removebg-preview.png"
@@ -258,7 +294,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="Vue.js Skill"
               >
                 <img
                   src="assets/img/vuejs-removebg-preview.png"
@@ -274,7 +312,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="JavaScript Skill"
               >
                 <img
                   src="assets/img/js.png"
@@ -288,7 +328,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="PHP Skill"
               >
                 <img
                   src="assets/img/php-removebg-preview.png"
@@ -302,7 +344,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="MySQL Skill"
               >
                 <img
                   src="assets/img/mysql.png"
@@ -318,7 +362,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="Git Skill"
               >
                 <img
                   src="assets/img/git-removebg-preview.png"
@@ -334,7 +380,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="Bootstrap Skill"
               >
                 <img
                   src="assets/img/bootstrap-removebg-preview.png"
@@ -350,7 +398,9 @@
             </div>
             <div class="col-6 col-md-4 col-lg-3">
               <div
-                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4"
+                class="card bg-dark border-secondary shadow-sm text-center h-100 p-4 hover-animate"
+                tabindex="0"
+                aria-label="REST API Skill"
               >
                 <img
                   src="assets/img/rest_api-removebg-preview.png"
@@ -371,13 +421,19 @@
       <!-- ======= Projects Section ======= -->
       <section
         id="projects"
-        class="py-5 bg-dark border-bottom border-secondary"
+        class="py-5 bg-dark border-bottom border-secondary section-divider"
+        data-aos="fade-up"
+        data-aos-delay="300"
       >
         <div class="container">
           <h2 class="text-center text-info fw-bold mb-5">Featured Projects</h2>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="card bg-black border-secondary shadow h-100">
+              <div
+                class="card bg-black border-secondary shadow h-100 hover-animate"
+                tabindex="0"
+                aria-label="Sistem Informasi Peminajaman Ruangan"
+              >
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/superadmin.png"
@@ -409,7 +465,11 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card bg-black border-secondary shadow h-100">
+              <div
+                class="card bg-black border-secondary shadow h-100 hover-animate"
+                tabindex="0"
+                aria-label="Aplikasi Perpustakaan"
+              >
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/dashboard-admin.png"
@@ -438,7 +498,11 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card bg-black border-secondary shadow h-100">
+              <div
+                class="card bg-black border-secondary shadow h-100 hover-animate"
+                tabindex="0"
+                aria-label="Aplikasi Point of Sales"
+              >
                 <div class="position-relative overflow-hidden rounded-top">
                   <a
                     href="assets/img/penjualan.png"
@@ -472,7 +536,12 @@
       </section>
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="py-5 bg-black">
+      <section
+        id="contact"
+        class="py-5 bg-black section-divider"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-7">
@@ -525,7 +594,7 @@
                   <div class="text-center mt-4">
                     <button
                       type="submit"
-                      class="btn btn-info px-5 py-2 rounded-pill"
+                      class="btn btn-info px-5 py-2 rounded-pill hover-animate"
                     >
                       Send Message
                     </button>
@@ -568,7 +637,44 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      // Theme toggle logic
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      function setTheme(mode) {
+        if (mode === "light") {
+          document.body.classList.remove("bg-dark", "text-light");
+          document.body.classList.add("bg-light", "text-dark");
+          themeIcon.classList.remove("bi-moon-stars-fill");
+          themeIcon.classList.add("bi-sun-fill");
+          document.documentElement.setAttribute("data-theme", "light");
+        } else {
+          document.body.classList.remove("bg-light", "text-dark");
+          document.body.classList.add("bg-dark", "text-light");
+          themeIcon.classList.remove("bi-sun-fill");
+          themeIcon.classList.add("bi-moon-stars-fill");
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      }
+      // Load theme from localStorage
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      setTheme(savedTheme);
+      themeToggle.addEventListener("click", () => {
+        const current = document.documentElement.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        setTheme(next);
+        localStorage.setItem("theme", next);
+      });
+      // AOS init
+      AOS.init({
+        once: true,
+        duration: 800,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>
